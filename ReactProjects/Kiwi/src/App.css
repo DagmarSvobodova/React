@@ -1,0 +1,86 @@
+.searchBar {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+}
+
+.result {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+}
+
+.results {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: space-between;
+    width: 70vw;
+    margin: 3rem 10rem;
+}
+
+body {
+    background-color: palevioletred;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.detail {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    width: 100vw;
+    height: 100vh;
+    background-image: url("https://m.actve.net/koule2017/70186/motiv.jpg");
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+img {
+    width: 30vw;
+    height: 40vh;
+    margin: 2rem;
+}
+
+.bananas {
+    background-color: rgba(212, 106, 142, 0.6);
+    width: 50vw;
+    height: 70vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    font-size: 2rem;
+}
+
+.heading {
+    display: flex;
+    justify-content: center;
+    position: absolute;
+    top: 54px;
+    left: 350px;
+    font-size: 2rem;
+}
+
+.pic {
+    width: 100vw;
+    height: 20vh;
+    background-image: url("https://m.actve.net/koule2017/70186/motiv.jpg");
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+.p {
+    position: absolute;
+    top: 30px;
+    right: -90px;
+    font-weight: 600;
+    font-size: 1.2rem;
+}
+
+h1 {
+    height: 2rem;
+}
