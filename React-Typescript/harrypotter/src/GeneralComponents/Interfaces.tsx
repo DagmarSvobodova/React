@@ -66,7 +66,6 @@ export interface State  {
   error: boolean;
 }
 
-export interface PeoplesApiResponse  {
-  
-  results: Array<Person>
-}
+
+
+

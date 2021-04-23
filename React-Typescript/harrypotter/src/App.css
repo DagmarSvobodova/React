@@ -1,0 +1,45 @@
+body {
+    width: 100vw;
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.header {
+    width: 100vw;
+    height: 30vh;
+}
+
+.header_img {
+    width: 100vw;
+    height: 28vh;
+}
+
+.people {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    width: 75vw;
+    height: 60vh;
+    margin: 0.5rem;
+}
+
+.person {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    width: 15rem;
+    height: 20rem;
+}
+
+.person_img {
+    width: 12rem;
+    height: 15rem;
+}
+
+h1 {
+    margin: 0;
+}

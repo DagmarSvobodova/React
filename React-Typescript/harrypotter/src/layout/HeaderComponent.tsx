@@ -36,7 +36,7 @@ const HeaderComponent = () => {
     <div className="header">
         
         <h1>{newHeader.heading}</h1>
-        <img src={newImage.path} alt={newImage.alt} />
+        <img className="header_img" src={newImage.path} alt={newImage.alt} />
 
 <div className="navigation">
         {routes.map((route, index) =>
