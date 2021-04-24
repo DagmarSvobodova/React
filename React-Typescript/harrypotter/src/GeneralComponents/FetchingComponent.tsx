@@ -30,8 +30,8 @@ function FetchingComponent ({url, pageNumber}: InferProps<typeof FetchingCompone
     try {
       const characters: Array<Person>  = JSON.parse(responseText);
       
-      if (pageNumber === 1 ){
-      const newState: State = {results: characters.slice(number, number + 5), loading: false,  error: false};
+      if (!pageNumber){
+      const newState: State = {results: characters.slice(number, number + 4), loading: false,  error: false};
       setState(newState);
       
     }else{
@@ -51,11 +51,12 @@ function FetchingComponent ({url, pageNumber}: InferProps<typeof FetchingCompone
   useEffect( () => {
     fetchData()
   }
-      ,[])
+      , [pageNumber] )
 
 
   return (
-    <div className="people">
+      
+    <div className="people" > 
       
         
           

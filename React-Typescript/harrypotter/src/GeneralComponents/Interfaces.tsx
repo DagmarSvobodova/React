@@ -8,11 +8,7 @@ export interface Header  {
     navigation: Array<Route>;
   }
 
-export interface Body  { 
-    content: Array<Person> | string;
-    button: string;
-   
-  }
+
 
 export interface Footer  { 
     footerText: string;

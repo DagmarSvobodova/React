@@ -1,6 +1,13 @@
 body {
     width: 100vw;
-    height: 100vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.App {
+    width: 100vw;
     display: flex;
     flex-direction: column;
     justify-content: center;
@@ -9,20 +16,34 @@ body {
 
 .header {
     width: 100vw;
-    height: 30vh;
+    height: 18rem;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
 }
 
 .header_img {
     width: 100vw;
-    height: 28vh;
+    height: 10rem;
+}
+
+.navigation {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    width: 100vw;
+    margin: 0.5rem;
+    height: 3rem;
+    background-color: rgb(148, 145, 145);
 }
 
 .people {
     display: flex;
     justify-content: space-around;
     align-items: center;
+    flex-wrap: wrap;
     width: 75vw;
-    height: 60vh;
     margin: 0.5rem;
 }
 
@@ -40,6 +61,53 @@ body {
     height: 15rem;
 }
 
+.footer {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    width: 100vw;
+    margin: 0.5rem;
+    height: 3rem;
+    font-size: 1.3rem;
+    background-color: rgb(148, 145, 145);
+}
+
 h1 {
     margin: 0;
+    align-self: flex-start;
+}
+
+a {
+    text-decoration: none;
+    color: black;
+    width: 25%;
+    height: 100%;
+    font-size: 1.3rem;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+a:hover {
+    background-color: rgb(82, 74, 74);
+    color: honeydew;
+}
+
+@media screen and (max-width: 800px) {
+    .header {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        height: 20rem;
+    }
+    .navigation {
+        flex-direction: column;
+        height: 8rem;
+    }
+    a {
+        height: 25%;
+        width: 100%;
+    }
 }

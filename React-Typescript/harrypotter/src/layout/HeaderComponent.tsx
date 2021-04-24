@@ -11,7 +11,9 @@ import { Link } from "react-router-dom";
 const HeaderComponent = () => {
     
     const [routes, setRoutes] = useState<Route[]>(
-        [ {link: '/all',
+        [ {link: '/',
+        label: 'Home'},
+        {link: '/all',
         label: 'All characters'}, {link: '/students',
         label: 'Students'}, {link: '/staff',
         label: 'Hogwarts staff'}  ]
