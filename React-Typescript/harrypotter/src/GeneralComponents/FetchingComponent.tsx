@@ -1,4 +1,3 @@
-import React from 'react';
 import { useState, useEffect } from 'react';
 import { Person, State } from './Interfaces';
 import PropTypes, { InferProps} from "prop-types";
@@ -23,7 +22,7 @@ function FetchingComponent ({url, pageNumber}: InferProps<typeof FetchingCompone
    
  const number: number = Math.floor(Math.random()* 20)
 
-  async function fetchData() {
+   const fetchData = async() => {
     
     const response = await fetch(url);
     const responseText = await response.text();
@@ -37,7 +36,7 @@ function FetchingComponent ({url, pageNumber}: InferProps<typeof FetchingCompone
     }else{
         const newState: State = {results: characters, loading: false,  error: false};
       setState(newState);
-    console.log(pageNumber)
+   
     }
      
     }
@@ -51,7 +50,7 @@ function FetchingComponent ({url, pageNumber}: InferProps<typeof FetchingCompone
   useEffect( () => {
     fetchData()
   }
-      , [pageNumber] )
+      , [url, pageNumber] )
 
 
   return (

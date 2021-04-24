@@ -1,6 +1,5 @@
 import { runInContext } from 'node:vm';
-import React from 'react';
-import { useState, useEffect } from 'react';
+import { useState} from 'react';
 import { Header, Image, Route } from '../GeneralComponents/Interfaces';
 import HPimage from '../images/HARRY-POTTER-HOGWARTS-LEGACY.jpeg'
 import { Link } from "react-router-dom";
@@ -16,7 +15,9 @@ const HeaderComponent = () => {
         {link: '/all',
         label: 'All characters'}, {link: '/students',
         label: 'Students'}, {link: '/staff',
-        label: 'Hogwarts staff'}  ]
+        label: 'Hogwarts staff'},
+        {link: '/search',
+        label: 'Search'} ]
         
       );
 
